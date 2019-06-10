@@ -1,0 +1,1 @@
+/flag?token[length][toString]

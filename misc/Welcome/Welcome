@@ -1,0 +1,3 @@
+AIS3{echo -n 'Welcom to AIS3 pre-exam in 2019!' | md5sum}
+
+Ps. md5 hash only

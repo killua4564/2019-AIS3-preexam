@@ -1,0 +1,13 @@
+version: "3.6"
+
+services:
+  mind_reading:
+    build: 
+      context: ./
+    image: deeplearning:latest
+    container_name: mind_reading
+    volumes:
+      - ./:/root
+    working_dir: /root
+    command: python3 script.py
+    

