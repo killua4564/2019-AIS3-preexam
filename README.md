@@ -35,7 +35,7 @@
 - [ORW](pwn/ORW/writeup.md)
 
 ### Misc
-- [Are you admin?](misc/Are%20you%20admin?/writeup.md)
+- [Are you admin?](misc/Are%20you%20admin%3F/writeup.md)
 - [KcufsJ](misc/KcufsJ/writeup.md)
 - [Welcome](misc/Welcome/writeup.md)
 - [Crystal Maze](misc/Crystal%20Maze/writeup.md)
